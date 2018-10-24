@@ -11,6 +11,7 @@ Base R and RStudio.
 
 <h2>Installation</h2>
 if (!require(devtools)) install.packages('devtools')
+
 devtools::install_github("khameelbm/finiteR")
 
 <h2>Supported Elements</h2>
