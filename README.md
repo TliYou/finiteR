@@ -1,6 +1,6 @@
 # finiteR
 
-finiteR is a collection of R functions for the finite element analysis of simple structures for educational purpose.
+finiteR is a collection of R functions for the finite element analysis of simple structures for educational purpose. The functions themselves are rather basic. 
 
 
 <h2> Version</h2>
