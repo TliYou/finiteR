@@ -7,7 +7,7 @@ finiteR is a collection of R functions for the finite element analysis (FEA) of 
 Current: 0.1.0
 
 <h2>Requirements</h2>
-Base R and RStudio.
+Base R, RStudio, devtools(for installation)
 
 <h2>Installation</h2>
 if (!require(devtools)) install.packages('devtools')
