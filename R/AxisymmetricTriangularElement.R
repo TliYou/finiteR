@@ -4,17 +4,19 @@
 #' This function computes the area of an axisymmetric triangular element
 #'                                     from the coordinates of its nodes.
 #'
-#' @param vec_nodalcoordinates Vector of nodal coordinates
-#'                              in the form c(x1,y1,x2,y2,x3,y3).
+#' @param vec_nodalcoordinates           A vector of nodal coordinates
+#'                                       in the form c(x1,y1,x2,y2,x3,y3).
 #'
-#' @return                     Area of an axisymmetric triangular triangular element.
+#' @return                               Area of an axisymmetric triangular triangular element.
 #' @export
 AxisymmetricT_Area =function(vec_nodalcoordinates)
 {
-  r1=vec_nodalcoordinates[1];r2=vec_nodalcoordinates[3];
-  r3=vec_nodalcoordinates[5];
-  z1=vec_nodalcoordinates[2];z2= vec_nodalcoordinates[4];
-  z3=vec_nodalcoordinates[6]
+  r1 = vec_nodalcoordinates[1];
+  r2 = vec_nodalcoordinates[3];
+  r3 = vec_nodalcoordinates[5];
+  z1 = vec_nodalcoordinates[2];
+  z2 = vec_nodalcoordinates[4];
+  z3 = vec_nodalcoordinates[6]
 
   Area=abs(r3*(z1-z2)+r2*(z3-z1)+r1*(z2-z3))
   return(Area/2)
@@ -23,7 +25,7 @@ AxisymmetricT_Area =function(vec_nodalcoordinates)
 
 #' Centroid of an axisymmetric triangular element
 #'
-#' @param vec_nodalcoordinates   Vector of nodal coordinates
+#' @param vec_nodalcoordinates   A vector of nodal coordinates
 #'                               in the form c(x1,y1,x2,y2,x3,y3).
 #'
 #' @return                       A vector (rbar and zbar) describing the centroid
@@ -31,15 +33,15 @@ AxisymmetricT_Area =function(vec_nodalcoordinates)
 #' @export
 AxisymmetricT_Centroid =function(vec_nodalcoordinates)
 {
-  r1=vec_nodalcoordinates[1];
-  r2=vec_nodalcoordinates[3];
-  r3=vec_nodalcoordinates[5];
-  z1=vec_nodalcoordinates[2];
-  z2=vec_nodalcoordinates[4];
-  z3=vec_nodalcoordinates[6]
+  r1 = vec_nodalcoordinates[1];
+  r2 = vec_nodalcoordinates[3];
+  r3 = vec_nodalcoordinates[5];
+  z1 = vec_nodalcoordinates[2];
+  z2 = vec_nodalcoordinates[4];
+  z3 = vec_nodalcoordinates[6]
 
-  rbar=(1/3)*(r1+r2+r3);
-  zbar=(1/3)*(z1+z2+z3);
+  rbar = (1/3)*(r1+r2+r3);
+  zbar = (1/3)*(z1+z2+z3);
   return(c(rbar,zbar))
 }
 

@@ -93,7 +93,7 @@ Dynamic_ReduceMatrix = function(bigKmatrix,knownloadnodes)
 
 #' Natural frequencies (beam element)
 #'
-#' his function computes the natural frequencies, in radians per seconds.
+#' This function computes the natural frequencies, in radians per seconds.
 #'
 #' @param reducedM      Reduced mass matrix obtained by applying
 #'                      boundary condition on the global mass matrix
